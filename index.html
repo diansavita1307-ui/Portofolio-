@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ni Made Dian Savita - Portofolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-200 via-gray-100 to-gray-300 text-gray-800">
+
+  <!-- Header / Navbar -->
+  <header class="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur-md shadow">
+    <nav aria-label="Global" class="flex items-center justify-between p-5 lg:px-10">
+      <div class="flex lg:flex-1">
+        <a href="index.html" class="-m-1.5 p-1.5 flex items-center gap-2">
+          <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="Logo" class="h-8 w-auto" />
+          <span class="font-bold text-indigo-700">Dian Savita</span>
+        </a>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="index.html" class="text-sm font-semibold text-gray-900 hover:text-indigo-600">Home</a>
+        <a href="#portofolio" class="text-sm font-semibold text-gray-900 hover:text-indigo-600">Portofolio</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="mx-auto max-w-2xl py-28 sm:py-36 lg:py-44 text-center">
+    <img src="foto/fotodiri2.jpg" alt="Ni Made Dian Savita" class="mx-auto h-40 w-40 rounded-full mb-6 object-cover shadow-xl ring-4 ring-indigo-300">
+    <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-6xl drop-shadow">
+      Ni Made Dian Savita
+    </h1>
+    <p class="mt-4 text-lg leading-8 text-gray-700">
+      Mahasiswa Sistem Informasi | Teknik Informatika | Universitas Pendidikan Ganesha
+    </p>
+  </div>
+
+  <!-- Portofolio Cards -->
+  <section id="portofolio" class="py-20 bg-gray-100/70 backdrop-blur-sm">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-10">Portofolio</h2>
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+
+        <!-- Card 1: Data Diri -->
+        <a href="data-diri.html" class="group relative block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+          <img src="foto/background-diri.jpg" alt="Data Diri" class="absolute inset-0 w-full h-full object-cover object-center transform group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition"></div>
+          <div class="relative p-6 flex items-center justify-center h-40">
+            <h3 class="font-bold text-xl text-white drop-shadow">Data Diri</h3>
+          </div>
+        </a>
+
+        <!-- Card 2: Prestasi -->
+        <a href="prestasi.html" class="group relative block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+          <img src="foto/background-prestasi.jpg" alt="Prestasi" class="absolute inset-0 w-full h-full object-cover object-center transform group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition"></div>
+          <div class="relative p-6 flex items-center justify-center h-40">
+            <h3 class="font-bold text-xl text-white drop-shadow">Prestasi</h3>
+          </div>
+        </a>
+
+        <!-- Card 3: Sertifikasi -->
+        <a href="sertifikasi.html" class="group relative block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+          <img src="foto/background-sertifikasi.jpg" alt="Sertifikasi" class="absolute inset-0 w-full h-full object-cover object-center transform group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition"></div>
+          <div class="relative p-6 flex items-center justify-center h-40">
+            <h3 class="font-bold text-xl text-white drop-shadow">Sertifikasi</h3>
+          </div>
+        </a>
+
+        <!-- Card 4: Organisasi -->
+        <a href="organisasi.html" class="group relative block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+          <img src="foto/background-organisasi.jpg" alt="Organisasi" class="absolute inset-0 w-full h-full object-cover object-center transform group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition"></div>
+          <div class="relative p-6 flex items-center justify-center h-40">
+            <h3 class="font-bold text-xl text-white drop-shadow">Organisasi</h3>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200 py-6 mt-12">
+    <div class="container mx-auto text-center text-sm">
+      © 2025 Ni Made Dian Savita. All Rights Reserved.
+    </div>
+  </footer>
+
+  <script>
+    const menuItems = document.querySelectorAll('nav a');
+    menuItems.forEach(item => {
+      item.addEventListener('click', function() {
+        menuItems.forEach(i => i.classList.remove('text-indigo-600'));
+        this.classList.add('text-indigo-600');
+      });
+    });
+  </script>
+
+</body>
+</html>
