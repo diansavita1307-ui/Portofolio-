@@ -1,102 +1,300 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ni Made Dian Savita - Portofolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ni Made Dian Savita - Website</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
 </head>
-<body class="bg-gradient-to-br from-gray-200 via-gray-100 to-gray-300 text-gray-800">
+<body class="bg-gradient-to-br from-blue-50 to-white text-gray-800">
 
-  <!-- Header / Navbar -->
-  <header class="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur-md shadow">
-    <nav aria-label="Global" class="flex items-center justify-between p-5 lg:px-10">
-      <div class="flex lg:flex-1">
-        <a href="index.html" class="-m-1.5 p-1.5 flex items-center gap-2">
-          <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="Logo" class="h-8 w-auto" />
-          <span class="font-bold text-indigo-700">Dian Savita</span>
-        </a>
-      </div>
-      <div class="hidden lg:flex lg:gap-x-12">
-        <a href="index.html" class="text-sm font-semibold text-gray-900 hover:text-indigo-600">Home</a>
-        <a href="#portofolio" class="text-sm font-semibold text-gray-900 hover:text-indigo-600">Portofolio</a>
-      </div>
-    </nav>
-  </header>
+<!-- Navbar Transparan -->
+<header class="fixed inset-x-0 top-0 z-50 bg-transparent backdrop-blur-sm py-4">
+  <nav class="flex items-center justify-between px-2 md:px-4 w-full">
+    <!-- Nama / Logo di kiri pojok -->
+    <h1 class="text-xl font-bold text-blue-600">Dian Savita</h1>
+
+    <!-- Menu Navigasi di kanan pojok -->
+    <div class="space-x-6 hidden md:flex">
+      <a href="#home" class="text-blue-500 hover:text-blue-600">Home</a>
+      <a href="#about" class="text-blue-500 hover:text-blue-600">About</a>
+      <a href="#story" class="text-blue-500 hover:text-blue-600">My Story</a>
+      <a href="#education" class="text-blue-500 hover:text-blue-600">Education</a>
+      <a href="#skills" class="text-blue-500 hover:text-blue-600">Skills</a>
+      <a href="#contact" class="text-blue-500 hover:text-blue-600">Contact</a>
+    </div>
+  </nav>
+</header>
 
   <!-- Hero Section -->
-  <div class="mx-auto max-w-2xl py-28 sm:py-36 lg:py-44 text-center">
-    <img src="foto/fotodiri2.jpg" alt="Ni Made Dian Savita" class="mx-auto h-40 w-40 rounded-full mb-6 object-cover shadow-xl ring-4 ring-indigo-300">
-    <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-6xl drop-shadow">
-      Ni Made Dian Savita
-    </h1>
-    <p class="mt-4 text-lg leading-8 text-gray-700">
-      Mahasiswa Sistem Informasi | Teknik Informatika | Universitas Pendidikan Ganesha
-    </p>
-  </div>
+  <section id="home" class="min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 px-6 md:px-16 pt-24 bg-gradient-to-r from-blue-50 to-white">
+    <div class="flex-shrink-0">
+      <img src="foto/fotodiri2.jpg" alt="Ni Made Dian Savita" class="w-56 h-56 md:w-72 md:h-72 rounded-full shadow-lg border-4 border-blue-200 object-cover">
+    </div>
 
-  <!-- Portofolio Cards -->
-  <section id="portofolio" class="py-20 bg-gray-100/70 backdrop-blur-sm">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold text-gray-800 mb-10">Portofolio</h2>
-      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+    <div class="text-center md:text-left max-w-lg">
+      <h2 class="text-4xl md:text-5xl font-bold text-blue-700 leading-tight">Ni Made Dian<br>Savita</h2>
+      <p class="text-lg text-gray-600 mt-3">Mahasiswi Sistem Informasi | Jurusan Teknik Informatika | Universitas Pendidikan Ganesha</p>
 
-        <!-- Card 1: Data Diri -->
-        <a href="data-diri.html" class="group relative block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
-          <img src="foto/background-diri.jpg" alt="Data Diri" class="absolute inset-0 w-full h-full object-cover object-center transform group-hover:scale-110 transition duration-500">
-          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition"></div>
-          <div class="relative p-6 flex items-center justify-center h-40">
-            <h3 class="font-bold text-xl text-white drop-shadow">Data Diri</h3>
-          </div>
-        </a>
-
-        <!-- Card 2: Prestasi -->
-        <a href="prestasi.html" class="group relative block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
-          <img src="foto/background-prestasi.jpg" alt="Prestasi" class="absolute inset-0 w-full h-full object-cover object-center transform group-hover:scale-110 transition duration-500">
-          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition"></div>
-          <div class="relative p-6 flex items-center justify-center h-40">
-            <h3 class="font-bold text-xl text-white drop-shadow">Prestasi</h3>
-          </div>
-        </a>
-
-        <!-- Card 3: Sertifikasi -->
-        <a href="sertifikasi.html" class="group relative block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
-          <img src="foto/background-sertifikasi.jpg" alt="Sertifikasi" class="absolute inset-0 w-full h-full object-cover object-center transform group-hover:scale-110 transition duration-500">
-          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition"></div>
-          <div class="relative p-6 flex items-center justify-center h-40">
-            <h3 class="font-bold text-xl text-white drop-shadow">Sertifikasi</h3>
-          </div>
-        </a>
-
-        <!-- Card 4: Organisasi -->
-        <a href="organisasi.html" class="group relative block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
-          <img src="foto/background-organisasi.jpg" alt="Organisasi" class="absolute inset-0 w-full h-full object-cover object-center transform group-hover:scale-110 transition duration-500">
-          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition"></div>
-          <div class="relative p-6 flex items-center justify-center h-40">
-            <h3 class="font-bold text-xl text-white drop-shadow">Organisasi</h3>
-          </div>
-        </a>
-
+      <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+        <a href="CV.pdf" class="bg-blue-500 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-600 text-center">Download CV</a>
+        <a href="#contact" class="border border-blue-500 text-blue-500 px-6 py-2 rounded-lg hover:bg-blue-50 text-center">Contact Me</a>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-200 py-6 mt-12">
-    <div class="container mx-auto text-center text-sm">
-      © 2025 Ni Made Dian Savita. All Rights Reserved.
-    </div>
-  </footer>
+  <!-- About Me (hanya judul, menyatu di atas section) -->
+<section id="about" class="py-10 text-center max-w-5xl mx-auto px-6">
+  <h2 class="text-3xl font-bold text-blue-700 mb-8">About Me</h2>
 
-  <script>
-    const menuItems = document.querySelectorAll('nav a');
-    menuItems.forEach(item => {
-      item.addEventListener('click', function() {
-        menuItems.forEach(i => i.classList.remove('text-indigo-600'));
-        this.classList.add('text-indigo-600');
-      });
-    });
-  </script>
+  <!-- Sections: Certifications, Achievements, Organizations -->
+  <div id="sections" class="grid gap-8 md:grid-cols-3 px-6 text-center">
+
+    <!-- Certifications Card -->
+    <a href="Certifications.html" class="block bg-white shadow-md rounded-xl p-8 border border-blue-100 hover:shadow-xl hover:-translate-y-1 transition-transform duration-300">
+      <div class="w-14 h-14 mx-auto bg-blue-100 flex items-center justify-center rounded-full mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6M7 4h10M5 8h14v12H5z" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold text-blue-600">Certifications</h3>
+      <p class="text-gray-600 mt-2">Berisi sertifikasi yang saya peroleh dari pelatihan digital dan kursus.</p>
+    </a>
+
+    <!-- Achievements Card -->
+    <a href="achievements.html" class="block bg-white shadow-md rounded-xl p-8 border border-blue-100 hover:shadow-xl hover:-translate-y-1 transition-transform duration-300">
+      <div class="w-14 h-14 mx-auto bg-blue-100 flex items-center justify-center rounded-full mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 21h8M12 17v4m6-13h2a2 2 0 012 2v1a5 5 0 01-5 5h-1M6 6H4a2 2 0 00-2 2v1a5 5 0 005 5h1m10-7a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold text-blue-600">Achievements</h3>
+      <p class="text-gray-600 mt-2">Pencapaian dan penghargaan yang pernah saya raih selama perjalanan akademik.</p>
+    </a>
+
+    <!-- Organizations Card -->
+    <a href="organizations.html" class="block bg-white shadow-md rounded-xl p-8 border border-blue-100 hover:shadow-xl hover:-translate-y-1 transition-transform duration-300">
+      <div class="w-14 h-14 mx-auto bg-blue-100 flex items-center justify-center rounded-full mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a4 4 0 00-5-4M9 20H4v-2a4 4 0 015-4m0-6a4 4 0 108 0 4 4 0 00-8 0z" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold text-blue-600">Organizations</h3>
+      <p class="text-gray-600 mt-2">Pengalaman saya dalam organisasi dan kepanitiaan.</p>
+    </a>
+
+  </div>
+</section>
+
+  <!-- My Story -->
+  <section id="story" class="py-20 max-w-3xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-blue-700 mb-4 text-center">My Story</h2>
+    <p class="text-gray-700 leading-relaxed text-justify">
+      Halo! Saya Ni Made Dian Savita, mahasiswi Sistem Informasi semester 3 di Universitas Pendidikan Ganesha. 
+      Saya memiliki ketertarikan pada dunia administrasi digital, pengelolaan data, dan koordinasi operasional. Sebelumnya,
+      saya aktif di berbagai kegiatan organisasi sehingga terbiasa bekerja dalam tim dan mengelola tanggung jawab dengan baik.
+      Saat ini, saya sedang mengembangkan diri untuk terjun ke dunia profesional dengan fokus pada posisi yang membutuhkan ketelitian, 
+      komunikasi, dan adaptasi yang baik. Bagi saya, bekerja bukan hanya tentang menyelesaikan tugas, tetapi juga tentang memberi 
+      dampak positif dan terus belajar. Saya percaya bahwa kombinasi antara pengalaman organisasi dan kemampuan digital akan menjadi 
+      modal penting dalam perjalanan karier saya ke depan.
+    </p>
+  </section>
+
+<!-- Education Section -->
+<section id="education" class="bg-gradient-to-br from-blue-50 to-white">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-blue-500 mb-10 text-center">Education</h2>
+
+    <!-- Flex horizontal -->
+    <div class="flex flex-nowrap gap-6 overflow-x-auto px-2">
+
+      <!-- Card 1: SD -->
+      <div class="flex-shrink-0 bg-white rounded-xl shadow-md p-6 w-64 border border-blue-200 hover:shadow-xl hover:-translate-y-1 transition-transform duration-300">
+        <div class="flex items-center gap-3 mb-2">
+          <div class="bg-blue-100 w-10 h-10 flex items-center justify-center rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.84 5.842L12 20.5l-7-3.08a12.083 12.083 0 01.84-5.842L12 14z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-blue-500">Sekolah Dasar</h3>
+        </div>
+        <p class="text-gray-600">SD N 4 Subagan</p>
+        <p class="text-gray-500 text-sm">2012 - 2018</p>
+        <p class="text-gray-500 text-sm">Karangasem</p>
+      </div>
+
+      <!-- Card 2: SMP -->
+      <div class="flex-shrink-0 bg-white rounded-xl shadow-md p-6 w-64 border border-blue-200 hover:shadow-xl hover:-translate-y-1 transition-transform duration-300">
+        <div class="flex items-center gap-3 mb-2">
+          <div class="bg-blue-100 w-10 h-10 flex items-center justify-center rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.84 5.842L12 20.5l-7-3.08a12.083 12.083 0 01.84-5.842L12 14z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-blue-500">Sekolah Menengah Pertama</h3>
+        </div>
+        <p class="text-gray-600">SMP N 2 Amlapura</p>
+        <p class="text-gray-500 text-sm">2018 - 2021</p>
+        <p class="text-gray-500 text-sm">Karangasem</p>
+      </div>
+
+      <!-- Card 3: SMA -->
+      <div class="flex-shrink-0 bg-white rounded-xl shadow-md p-6 w-64 border border-blue-200 hover:shadow-xl hover:-translate-y-1 transition-transform duration-300">
+        <div class="flex items-center gap-3 mb-2">
+          <div class="bg-blue-100 w-10 h-10 flex items-center justify-center rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.84 5.842L12 20.5l-7-3.08a12.083 12.083 0 01.84-5.842L12 14z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-blue-500">Sekolah Menengah Atas</h3>
+        </div>
+        <p class="text-gray-600">SMA N 2 Amlapura</p>
+        <p class="text-gray-500 text-sm">2021 - 2024</p>
+        <p class="text-gray-500 text-sm">Karangasem</p>
+      </div>
+
+      <!-- Card 4: Perguruan Tinggi -->
+      <div class="flex-shrink-0 bg-white rounded-xl shadow-md p-6 w-64 border border-blue-200 hover:shadow-xl hover:-translate-y-1 transition-transform duration-300">
+        <div class="flex items-center gap-3 mb-2">
+          <div class="bg-blue-100 w-10 h-10 flex items-center justify-center rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.84 5.842L12 20.5l-7-3.08a12.083 12.083 0 01.84-5.842L12 14z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-blue-500">Perguruan Tinggi</h3>
+        </div>
+        <p class="text-gray-600">Universitas Pendidikan Ganesha</p>
+        <p class="text-gray-500 text-sm">2024 - Sekarang</p>
+        <p class="text-gray-500 text-sm">Singaraja</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- My Skills Section -->
+<section id="my-skills" class="bg-gradient-to-br from-blue-50 to-white mt-16 py-16">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-blue-500 mb-10 text-center">My Skills</h2>
+
+    <!-- Parent grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Technical Skills -->
+      <div class="bg-white shadow-lg rounded-2xl p-6">
+        <h3 class="text-xl font-semibold text-blue-400 mb-4">Technical Skills</h3>
+        <div class="mb-4">
+          <div class="flex justify-between text-sm font-medium text-gray-600">
+            <span>Pemrograman Java, Python</span><span>20%</span>
+          </div>
+          <div class="w-full bg-blue-100 rounded-full h-2.5">
+            <div class="bg-blue-400 h-2.5 rounded-full w-[20%]"></div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <div class="flex justify-between text-sm font-medium text-gray-600">
+            <span>Analisis Data Excel, SQL</span><span>60%</span>
+          </div>
+          <div class="w-full bg-blue-100 rounded-full h-2.5">
+            <div class="bg-blue-400 h-2.5 rounded-full w-[60%]"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm font-medium text-gray-600">
+            <span>Pengembangan Web HTML, CSS</span><span>30%</span>
+          </div>
+          <div class="w-full bg-blue-100 rounded-full h-2.5">
+            <div class="bg-blue-400 h-2.5 rounded-full w-[30%]"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Soft Skills -->
+      <div class="bg-white shadow-lg rounded-2xl p-6">
+        <h3 class="text-xl font-semibold text-blue-400 mb-4">Soft Skills</h3>
+        <div class="mb-4">
+          <div class="flex justify-between text-sm font-medium text-gray-600">
+            <span>Communication</span><span>80%</span>
+          </div>
+          <div class="w-full bg-blue-100 rounded-full h-2.5">
+            <div class="bg-blue-400 h-2.5 rounded-full w-[80%]"></div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <div class="flex justify-between text-sm font-medium text-gray-600">
+            <span>Teamwork</span><span>80%</span>
+          </div>
+          <div class="w-full bg-blue-100 rounded-full h-2.5">
+            <div class="bg-blue-400 h-2.5 rounded-full w-[80%]"></div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <div class="flex justify-between text-sm font-medium text-gray-600">
+            <span>Problem Solving</span><span>70%</span>
+          </div>
+          <div class="w-full bg-blue-100 rounded-full h-2.5">
+            <div class="bg-blue-400 h-2.5 rounded-full w-[70%]"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm font-medium text-gray-600">
+            <span>Time Management</span><span>70%</span>
+          </div>
+          <div class="w-full bg-blue-100 rounded-full h-2.5">
+            <div class="bg-blue-400 h-2.5 rounded-full w-[70%]"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-gradient-to-br from-blue-50 to-white mt-16">
+  <div class="max-w-3xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-blue-500 mb-10">Contact</h2>
+
+    <div class="space-y-6 text-lg">
+      <!-- Email -->
+      <div class="flex items-center justify-center space-x-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m8-4H8m4 8h.01M21 12c0 4.418-3.582 8-8 8s-8-3.582-8-8 3.582-8 8-8 8 3.582 8 8z" />
+        </svg>
+        <a href="dian.savita@student.undiksha.ac.id" class="text-blue-600 hover:underline">dian.savita@student.undiksha.ac.id</a>
+      </div>
+
+      <!-- Phone -->
+      <div class="flex items-center justify-center space-x-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h2.28a1 1 0 01.948.684l1.518 4.553a1 1 0 01-.27 1.057l-1.21 1.21a16.001 16.001 0 007.07 7.07l1.21-1.21a1 1 0 011.057-.27l4.553 1.518a1 1 0 01.684.949V19a2 2 0 01-2 2h-1c-9.941 0-18-8.059-18-18V5z" />
+        </svg>
+        <a href="tel:+6282146896960" class="text-blue-600 hover:underline">+62 821-4689-6960</a>
+      </div>
+
+      <!-- Instagram -->
+      <div class="flex items-center justify-center space-x-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.2 2.4.4.6.2 1 .5 1.5 1 .5.5.8.9 1 1.5.2.5.3 1.2.4 2.4.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.9-.4 2.4-.2.6-.5 1-1 1.5-.5.5-.9.8-1.5 1-.5.2-1.2.3-2.4.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.2-2.4-.4-.6-.2-1-.5-1.5-1-.5-.5-.8-.9-1-1.5-.2-.5-.3-1.2-.4-2.4C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.9.4-2.4.2-.6.5-1 1-1.5.5-.5.9-.8 1.5-1 .5-.2 1.2-.3 2.4-.4C8.4 2.2 8.8 2.2 12 2.2zm0-2.2C8.7 0 8.3 0 7 .1 5.7.2 4.8.3 4 .5c-.9.2-1.7.5-2.4 1.2C.9 2.4.6 3.1.4 4c-.2.8-.3 1.7-.4 3C0 8.3 0 8.7 0 12c0 3.3 0 3.7.1 5 .1 1.3.2 2.2.4 3 .2.9.5 1.7 1.2 2.4.7.7 1.5 1 2.4 1.2.8.2 1.7.3 3 .4 1.3.1 1.7.1 5 .1s3.7 0 5-.1c1.3-.1 2.2-.2 3-.4.9-.2 1.7-.5 2.4-1.2.7-.7 1-1.5 1.2-2.4.2-.8.3-1.7.4-3 .1-1.3.1-1.7.1-5s0-3.7-.1-5c-.1-1.3-.2-2.2-.4-3-.2-.9-.5-1.7-1.2-2.4C21.6.9 20.9.6 20 .4c-.8-.2-1.7-.3-3-.4C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zm0 10.2a4 4 0 110-8 4 4 0 010 8zm6.4-11.7a1.4 1.4 0 11-2.8 0 1.4 1.4 0 012.8 0z"/>
+        </svg>
+        <a href="https://www.instagram.com/diiansvt?igsh=MWoydmFmZDE2cXg1bw==" target="_blank" class="text-blue-600 hover:underline">@diiansvt</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Footer -->
+  <footer class="bg-white text-blue-700 py-6 text-center mt-12 shadow-inner">
+    © 2025 Ni Made Dian Savita. 
+  </footer>
 
 </body>
 </html>
